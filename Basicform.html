@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Form</title>
+<style>
+    body {
+        background-color: rgb(242, 230, 230);
+    }
+
+    h2 {
+        color: rgb(78, 78, 212);
+    }
+
+    legend {
+        color: rgb(105, 32, 105);
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    
+<center><h2>SCHOOL ADMISSION FORM</h2></center>
+<fieldset>
+    <legend>Personal Details</legend>
+    <form accept-charset="UTF-8" action="https://www.google.com" method="POST" autocomplete="on">
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="sname">Father's Name:</label>
+        <input type="text" id="sname" name="sname"><br><br>
+
+        <label for="Tname">Mother's Name:</label>
+        <input type="text" id="Tname" name="Tname"><br><br>
+
+        <label for="age">Student Age:</label>
+        <input type="number" id="age" name="age" autocomplete="on"> <br><br>
+
+        <label for="email">Parent E-mail:</label>
+        <input type="email" id="email" name="email" value="abcz@gmail.com" required><br><br>
+
+        <label for="tel">Parent Tel number:</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" value="9659-34-6784"><br><br>
+
+        <label> Gender</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label>Extra Curricular Activities</label><br>
+        <label>Select at least two</label><br>
+        <input type="checkbox" id="Chess" name="chess">
+        <label for="Chess">Chess</label><br>
+        <input type="checkbox" id="Cricket" name="Cricket">
+        <label for="Cricket">Cricket</label><br>
+        <input type="checkbox" id="Dance" name="Dance">
+        <label for="Dance">Dance</label><br>
+        <input type="checkbox" id="Music" name="Music">
+        <label for="Music">Music</label><br><br>
+
+        <label for="date">Date of admission:</label>
+        <input type="date" name="date" id="date"><br><br>
+
+        <label for="time">Time of admission:</label>
+        <input type="time" name="time" id="time"><br><br>
+
+        <label for="file">Upload date of birth certificate:</label>
+        <input type="file" name="file" id="file" required><br><br>
+
+        <input type="button" onclick="alert ('WELCOME TO ABC SCHOOL')" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</fieldset>
+
+</body>
+</html>
