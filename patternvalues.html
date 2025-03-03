@@ -1,0 +1,47 @@
+<!Doctype html>
+<html lan="eng">
+<head>
+<meta charset ="UTF-8">
+<meta name="viewport" content="width=device-width ,initial scale=1.0">
+<title> pattern and Digits </title>
+</head>
+<body>
+   <h3> Pattern value for only Digits</h3>
+  <form accept charset="UTF-8" action="https://www.google.com" method="POST" autocomplete="on">
+   <label for="Digits">One or More Digits:</label>
+   <input type="password" id="Digits" Name="pwd" pattern="^\d+$"><br><br>
+   
+   <label for="Digits">Zero or One Digits:</label>
+   <input type="password" id="Digits" Name="pwd" pattern="^\d?$"><br><br>
+ 
+   <label for="Digits">Specify the no of Digits:</label>
+   <input type="password" id="Digits" Name="pwd" pattern="^\d{5}"><br><br>
+   
+    <label for="Digits">Specify the no of Digits with  Specific Range:</label>
+   <input type="password" id="Digits" Name="pwd" pattern="^\d{5,7}"><br><br>
+
+    <label for="Digits">Start with specific no & zero or more occurance:</label>
+    <input type="password" id="Digits" Name="pwd" pattern="^91\d*$"><br><br>
+	
+	 
+    <label for="Digits">Start with specific no & zero or more occurance with the specify the no of digits:</label>
+    <input type="password" id="Digits" Name="pwd" pattern="^91\d{10}$"><br><br>
+	
+	
+    <label for="Digits">Specific the phone no or  tel no with hypens and  range:</label>
+    <input type="password" id="Digits" Name="pwd" pattern="^\d{3}-\d{4}-\d{3}"><br><br>
+	
+	 
+    <label for="Digits">Custom currency format:</label>
+    <input type="password" id="Digits" Name="pwd" pattern="^\$\d+(\.\d{2}?$"><br><br>
+	
+	  
+    <label for="Digits">Decimal  Number:</label>
+    <input type="password" id="Digits" Name="pwd" pattern="^\d+(\.\d{2,5})?$"><br><br>
+	
+	<input type="file" accept="application/pdf" multiple> <br><br>
+	
+	 <input type="submit" value="submit">
+   </form>
+</body>
+</html>
