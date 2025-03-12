@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+        }
+        h3{
+            color:violet;      
+          }
+        h1{
+            color:red;
+        }
+        ul{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+<center><h1>Registration Form</h1></center>
+</header>
+<section>
+   
+  <fieldset> 
+   <legend> <h3>Student Login</h3></legend>
+     <form accept-charset="utf-8" action="submit.php" autocomplete="on" method="post" target="_blank">
+        <label for="name">Name:</label>
+         <input type="=text" id="name" name="name" value="name" autofocus><br><br>
+         <label for="Fname">Father Name:</label>
+
+         <input type="=text" id="fname" name="Fname" value="fname" required><br><br>
+         <labelfor="Mname">Mother Name:</label>
+
+         <input type="=text" id="Mname" name="Mname" value="Mname" required><br><br>
+         <label for="gender">Gender:</label><br>
+         <label for="female">Female:</label>
+         <input type="radio"  id="female" name="gender">
+         <label for="male">Male:</label>
+         <input type="radio"  id="male" name="gender"><br><br>
+         <label for="email">E-mail</label>
+         <input type="=email" id="email" pattern="^[0-9 a-z A-z,/8=%()]+@[0-9 a-z A-z,]$.com" value="abc@gmail.com" required><br><br>
+         <input type="submit" value="submit">
+    </form></fieldset>
+</section><br><br>
+    
+<center><footer>  <a href="www.abc.com">www.abc.com</a></footer></center>
+</body>
+</html>
