@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical properties</title>
+    <style>
+            .container1{
+  width:100%;
+ background-color: aqua;
+ padding:10px;
+ margin-block-start: 50px;
+
+}
+.container2{
+  width:100%;
+background-color: bisque;
+padding:10px;  
+margin-block-end: 50px;
+}
+
+.container3{
+  width:100%;
+ background-color: blueviolet;
+ padding:10px;
+ margin-inline-start: 50px;
+  
+}
+
+.container4{
+  width:100%;
+  background-color: pink;
+  padding:10px;
+  margin-inline-end:  50px;
+
+}
+.container11{
+  width:100%;
+ background-color: aqua;
+ padding:10px;
+ margin-top: 50px;
+
+}
+.container12{
+  width:100%;
+background-color: bisque;
+padding:10px;  
+margin-bottom: 50px;
+}
+
+.container13{
+  width:100%;
+ background-color: blueviolet;
+ padding:10px;
+ margin-left: 50px;
+  
+}
+
+.container14{
+  width:100%;
+  background-color: pink;
+  padding:10px;
+  margin-right: 50px;
+
+}
+    </style>
+</head>
+<body>
+    <h1>Logical properties and values</h1>
+
+<div class="container1" dir="rtl">
+    Hi I am margin-block-start(rtl)
+</div>
+<br>
+
+<div class="container2" dir="ltr">
+    Hi I am margin-block-end(ltr)
+</div><br>
+
+<div class="container3"dir="ltr">
+    Hi I am margin-inline-start(ltr)
+</div>
+<br>
+
+<div class="container4" dir="ltr">
+    Hi I am margin-inline-end(ltr)
+</div>
+<BR></BR>
+<BR></BR>
+<BR></BR>
+<h1>Normal properties and values</h1>
+<div class="container11" dir="rtl">
+    Hi I am margin-top(rtl)
+</div>
+<br>
+
+<div class="container12" dir="ltr">
+    Hi I am margin-bottom(ltr)
+</div><br>
+
+<div class="container13"dir="ltr">
+    Hi I am margin-left(ltr)
+</div>
+<br>
+
+<div class="container14" dir="rtl">
+    Hi I am margin-right(rtl)
+</div>
+</body>
+</html>
