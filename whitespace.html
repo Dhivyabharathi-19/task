@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRE</title>
+    <style>
+          .normal{
+            border:5px solid green;
+            White-space:normal; 
+            text-indent: 50px;
+            
+             font-size: 15px;
+            line-height: 100%;
+            
+          }
+          .nowrap{
+            border:5px solid green;
+            White-space:nowrap; 
+             text-indent: 10em;
+            font-size: 15px;
+           
+          }
+          .pre{
+            border:5px solid green;
+            White-space:pre; 
+            text-indent: 25cm;
+            font-size: 15px;
+
+         }
+          .pre-wrap{
+            border:5px solid green;
+            White-space:pre-wrap;
+           
+          }
+          .inherit{
+            white-space: inherit;
+          }
+          .preline{
+            border:5px solid green;
+            White-space:pre-line;
+          }
+         
+          .in{
+            white-space: inherit;
+          }
+          .initial{
+            border:5px solid green;
+            white-space:initial;
+          }
+    </style>
+</head>
+<body>
+    <div class="normal"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odio ex nihil in repellendus quasi eveniet est consequuntur ipsum dolores architecto tempore neque accusamus quisquam eos accusantium, perferendis error consequatur?
+
+    </p></div><br>
+    <div class="nowrap"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odio ex nihil in repellendus quasi eveniet est consequuntur ipsum dolores architecto tempore neque accusamus quisquam eos accusantium, perferendis error consequatur?
+
+    </p></div><br>
+    <div class="pre"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Sed odio ex nihil in repellendus quasi eveniet est consequuntur            
+            ipsum dolores architecto       neque accusamus quisquam eos accusantium,
+                   perferendis error consequatur?
+
+    </p></div><br>
+    <div class="pre-wrap"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odio ex nihil in repellendus quasi eveniet est consequuntur ipsum dolores architecto                           tempore neque accusamus               quisquam eos accusantium,       perferendis error consequatur?
+      
+    </p> <p class="inherit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odio ex nihil in repellendus quasi eveniet est consequuntur    ipsum dolores architecto       tempore neque accusamus quisquam eos accusantium,              perferendis error consequatur?
+
+    </p>
+</div><br>
+
+
+<div class="preline">    
+    <div  class="in"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odio ex nihil in repellendus quasi eveniet est consequuntur    ipsum dolores architecto       tempore neque accusamus quisquam eos accusantium,              perferendis error consequatur?
+
+    </p></div>
+          
+</div>
+
+    <br>
+    <div class="initial">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis odit tenetur distinctio similique? Quae quaerat accusamus tempore illo, maiores consequatur aspernatur eaque perferendis sit veniam eius doloribus. Quisquam, eius neque.</p>
+
+    </div>
+</body>
+</html>
