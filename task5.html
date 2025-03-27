@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outline</title>
+</head>
+<style>
+    h1{
+        color: brown;
+    }
+    .task1 input{
+        outline-style: solid green;
+        outline-offset: 5px;
+    }
+    .task2 p{
+        outline-style: dotted ;
+        outline-offset: 5px blue;
+     }
+     .task3 {
+        border: 5px solid orange;
+        outline-style: dotted ;
+        outline-offset: 5px;
+        
+     }
+</style>
+<body>
+    <div class="task1">
+        <h1>Task -1 Add an outline to an input field when it is focused (try using :focus).
+        </h1>
+        <label for="name">NAME</label>
+        <input type="text" name="name" autofocus/>
+    </div><br><br>
+
+
+    <div class="task2">
+        <h1>Task 2-Create a div with a 5px dotted blue outline.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, suscipit necessitatibus quaerat quidem repellendus eos consectetur porro sed dolor in. Esse optio et itaque quaerat totam fugiat excepturi suscipit in!</p>
+    </div><br><br>
+    
+    <div class="task3">
+        <h1>Task 3-Make an element have an outline that doesn’t take up space in the layout (check the difference from borders).</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, suscipit necessitatibus quaerat quidem repellendus eos consectetur porro sed dolor in. Esse optio et itaque quaerat totam fugiat excepturi suscipit in!</p>
+    </div>
+</body>
+</html>
