@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dashboard</title>
+    <link rel="stylesheet" href="css projecttask.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-section">
+                <i class="fas fa-user-circle user-icon"></i>
+                <h3>Welcome, IvKafe</h3>
+            </div>
+            <ul class="menu">
+                <li><i class="fas fa-home"></i> Dashboard</li>
+                <li><i class="fas fa-language"></i> New Translation</li>
+                <li><i class="fas fa-folder"></i> My Projects</li>
+                <li><i class="fas fa-file-alt"></i> My Translations</li>
+                <li><i class="fas fa-credit-card"></i> Billing & Payment</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+                <li class="logout"><i class="fas fa-sign-out-alt"></i> Log Out</li>
+            </ul>
+        </div>
+
+        <!-- Profile & Password Section -->
+        <div class="content">
+            <h2>Your personal profile info</h2>
+
+            <div class="form-container">
+                <div class="profile-section1">
+                    <h3><i class="fas fa-user"></i> Profile</h3>
+                    <form>
+                        <label>First Name</label>
+                        <input type="text" placeholder="Name">
+                        
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Surname">
+                        
+                        <label>Username</label>
+                        <input type="text" placeholder="Username">
+                        
+                        <label>Your E-mail</label>
+                        <input type="email" placeholder="mail@example.com">
+                        
+                
+                        
+                        <label>Personal Phone Number</label>
+                        <div class="phone-group">
+                            <select><option>+91</option></select>
+                            <input type="text" placeholder="44 123 45 671">
+                        </div>
+
+                        <label>Work Phone Number</label>
+                        <div class="phone-group">
+                            <select><option>+91</option></select>
+                            <input type="text" placeholder="44 123 45 671">
+                        </div>
+
+                        <label>Country, City</label>
+                        <input type="text" placeholder="Ukraine, Kiev">
+                        
+                        <label>Organization</label>
+                        <input type="text" placeholder="Organization Name">
+                    </form>
+                
+                </div>
+
+                <div class="password-section">
+                    <h3><i class="fas fa-lock"></i> Password</h3>
+                    <form>
+                        <label>Old Password</label>
+                        <input type="password" placeholder="********">
+                        
+                        <label>New Password</label>
+                        <input type="password" placeholder="********">
+                        
+                        <label>Confirm New Password</label>
+                        <input type="password" placeholder="********">
+                        
+                        <button class="save-btn">Correct. Save Info</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

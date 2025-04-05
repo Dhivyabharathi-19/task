@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #EAF2F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 800px;
+    height:90%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+}
+
+.profile-section {
+    background-color: #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+    color:white;
+    
+
+}
+
+
+.user-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu li i {
+    margin-right: 10px;
+}
+
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding-left: 15px;
+    transition: 0.3s;
+}
+
+.logout {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-section1,
+
+.password-section {
+    flex: 1;
+    background-color: #F8F9FA;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    
+}
+
+
+.profile-section h3,
+.password-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+input,
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.phone-group {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-group select {
+    width: 60px;
+}
+
+.save-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.save-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .menu li {
+        justify-content: center;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+}
