@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Cursor Property</title>
+  <style>
+    h1 {
+      color: red;
+      text-align: center;
+      font-family: cursive;
+    }
+    button {
+      background-color: rgb(205, 205, 239);
+    }
+    button:hover {
+      background-color: orange;
+    }
+    h2 {
+      color: hotpink;
+      text-transform: uppercase;
+      text-decoration: underline double;
+    }
+
+  
+    
+    .Context-menu button {
+      cursor: context-menu;
+    }
+
+    
+    .help button {
+      cursor: help;
+    }
+     .pointer button {
+      cursor: pointer;
+    }
+    .progress button{
+        cursor: progress;
+    }
+    .wait button{
+        cursor: wait;
+    }
+    .cell button{
+        cursor: cell;
+    }
+    .crosshair button{
+        cursor: crosshair;
+    }
+    .text button{
+        cursor: text;
+    }
+    .vertical-text button{
+        cursor: vertical-text;
+    }
+    .alias button{
+        cursor: alias;
+    }
+    .copy button{
+        cursor: copy;
+    }
+    .move button{
+        cursor: move;
+    }
+    .no-drop button{
+        cursor: no-drop;
+    }
+    .not-allowed button{
+        cursor: not-allowed;
+    }
+    .grab button{
+        cursor: grab;
+    }
+    .grabbing button{
+        cursor: grabbing;
+    }
+    .all-scroll button{
+        cursor: all-scroll;
+    }
+    .col-resize button{
+      cursor: col-resize;
+    }
+    .row-resize button{
+           cursor: row-resize;
+    }
+    .n-resize button{
+          cursor: n-resize  ;
+    }
+    .e-resize button{
+      cursor: e-resize;
+    }
+    .s-resize button{
+       cursor: s-resize ;
+    }
+    .w-resize button{
+      cursor: w-resize;
+    }
+    .ne-resize button{
+       cursor: ne-resize ;
+    }
+    .nw-resize button{
+      cursor: nw-resize;
+    }
+    .se-resize button{
+       cursor: se-resize;
+    }
+    .sw-resize button{
+      cursor: sw-resize ;
+    }
+    .ew-resize button{
+       cursor: ew-resize ;
+    }
+    .ns-resize button{
+      cursor: ns-resize;
+    }
+    .nesw-resize button{
+      cursor: nesw-resize ;
+    }
+    .nwse-resize button{
+      cursor: nwse-resize ;
+    }
+    .zoom-in button{
+      cursor: zoom-in ;
+    }
+    .zoom-out  button{
+      cursor: zoom-out  ;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Cursor Property</h1>
+
+  <h2>Context Menu</h2>
+  <div class="Context-menu">
+    <button type="button">Context menu</button>
+  </div>
+
+  <h2>Help</h2>
+  <div class="help">
+    <button type="button">Help</button>
+  </div>
+
+  <h2>Pointer</h2>
+  <div class="pointer">
+    <button type="button">Pointer</button>
+  </div>
+  
+  <h2>progress</h2>
+  <div class="progress">
+    <button type="button">progress</button>
+  </div>
+  
+  
+  <h2>cell</h2>
+  <div class="cell">
+    <button type="button">cell</button>
+  </div>
+  
+  <h2>crosshair</h2>
+  <div class="crosshair">
+    <button type="button">crosshair</button>
+  </div>
+  <h2>text</h2>
+  <div class="text">
+    <button type="button">text</button>
+  </div>
+  <h2>vertical-text</h2>
+  <div class="vertical-text">
+    <button type="button">vertical-text</button>
+  </div>
+  <h2>alias</h2>
+  <div class="alias">
+    <button type="button">alias</button>
+  </div>
+  <h2>copy</h2>
+  <div class="copy">
+    <button type="button">copy</button>
+  </div>
+  <h2>move</h2>
+  <div class="move">
+    <button type="button">move</button>
+  </div>
+  <h2>no-drop</h2>
+  <div class="no-drop">
+    <button type="button">no-drop</button>
+  </div>
+  <h2>not-allowed</h2>
+  <div class="not-allowed">
+    <button type="button">not-allowed</button>
+  </div>
+  <h2>grab</h2>
+  <div class="grab">
+    <button type="button">grab</button>
+  </div>
+  <h2>grabbing</h2>
+  <div class="grabbing">
+    <button type="button">grabbing</button>
+  </div>
+  <h2>all-scroll</h2>
+  <div class="all-scroll">
+    <button type="button">all-scroll</button>
+  </div>
+  <h2>col-resize   </h2>
+  <div class="col-resize   ">
+    <button type="button">col-resize   </button>
+  </div>
+  <h2>row-resize</h2>
+  <div class="row-resize">
+    <button type="button">row-resize </button>
+  </div>
+  <h2>n-resize  </h2>
+  <div class="n-resize">
+    <button type="button">n-resize   </button>
+  </div>
+  <h2>e-resize </h2>
+  <div class="e-resize">
+    <button type="button">e-resize </button>
+  </div>
+  <h2>s-resize </h2>
+  <div class="s-resize ">
+    <button type="button">s-resize </button>
+  </div>
+  <h2>w-resize  </h2>
+  <div class="w-resize ">
+    <button type="button">w-resize</button>
+  </div>
+  <h2>ne-resize  </h2>
+  <div class="ne-resize ">
+    <button type="button">ne-resize </button>
+  </div>
+  <h2>nw-resize</h2>
+  <div class="nw-resize ">
+    <button type="button">nw-resize</button>
+  </div>
+  <h2>se-resize</h2>
+  <div class="se-resize">
+    <button type="button">se-resize</button>
+  </div>
+  <h2>sw-resize </h2>
+  <div class="sw-resize ">
+    <button type="button">sw-resize </button>
+  </div>
+  <h2>ew-resize  </h2>
+  <div class="ew-resize ">
+    <button type="button">ew-resize </button>
+  </div>
+  <h2>ns-resize</h2>
+  <div class="ns-resize">
+    <button type="button">ns-resize</button>
+  </div>
+  <h2>nesw-resize</h2>
+  <div class="nesw-resize ">
+    <button type="button">nesw-resize </button>
+  </div>
+  <h2>nwse-resize</h2>
+  <div class="nwse-resize  ">
+    <button type="button">nwse-resize </button>
+  </div>
+  <h2>zoom-in </h2>
+  <div class="zoom-in  ">
+    <button type="button">zoom-in </button>
+  </div>
+  <h2>zoom-out  </h2>
+  <div class="zoom-out  ">
+    <button type="button">zoom-out   </button>
+  </div>
+   
+</body>
+</html>
