@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Display Property Examples</title>
+  <style>
+    .example { margin: 10px 0; padding: 5px; border: 1px solid #ccc; }
+
+    .inline span { display: inline; background: #f8d7da; }
+    .block div { display: block; background: #d1ecf1; }
+    .contents { display: contents;
+    
+  }
+    .flex { display: flex; background: #d4edda; gap: 10px; }
+    .grid { display: grid; grid-template-columns: auto auto; background: #fff3cd; gap: 10px; }
+    .inline-block { display: inline-block; width: 100px; height: 50px; background: #cce5ff; }
+    .inline-flex { display: inline-flex; background: #fefefe; gap: 10px; }
+    .inline-grid { display: inline-grid; grid-template-columns: auto auto; background: #e2e3e5; gap: 10px; }
+    .inline-table { display: inline-table; border: 1px solid black; }
+    .list-item { display: list-item; list-style: disc inside; }
+    .run-in { display: run-in; font-weight: bold; }
+
+    .table { display: table; border: 1px solid #000; }
+    .table-row { display: table-row; }
+    .table-cell { display: table-cell; border: 1px solid gray; padding: 5px; }
+    .table-caption { display: table-caption; caption-side: top; font-weight: bold; }
+    .table-column-group { display: table-column-group; }
+    .table-header-group { display: table-header-group; }
+    .table-footer-group { display: table-footer-group; }
+    .table-row-group { display: table-row-group; }
+    .table-column { display: table-column; }
+    .none { display: none; }
+    .initial { display: initial; }
+    .inherit-wrapper { display: flex; gap: 10px; background: #f0f0f0; }
+    .inherit { display: inherit; }
+  </style>
+</head>
+<body>
+
+  <h2>1. inline</h2>
+  <div class="example inline">
+    <span>This is inline</span> <span>So is this</span>
+  </div>
+
+  <h2>2. block</h2>
+  <div class="example block">
+    <div>This is a block element</div>
+    <div>This is another block</div>
+  </div>
+
+  <h2>3. contents</h2>
+  <div class="example">
+    <div class="contents">
+      <p style="background-color: aquamarine;">Paragraph 1</p>
+      <p>Paragraph 2</p>
+    </div>
+  </div>
+
+  <h2>4. flex</h2>
+  <div class="example flex">
+    <div>Item 1</div>
+    <div>Item 2</div>
+  </div>
+
+  <h2>5. grid</h2>
+  <div class="example grid">
+    <div>1</div>
+    <div>2</div>
+  </div>
+
+  <h2>6. inline-block</h2>
+  <div class="example">
+    <div class="inline-block">Inline Block</div>
+  </div>
+
+  <h2>7. inline-flex</h2>
+  <div class="example inline-flex">
+    <div>Item 1</div>
+    <div>Item 2</div>
+  </div>
+
+  <h2>8. inline-grid</h2>
+  <div class="example inline-grid">
+    <div>1</div>
+    <div>2</div>
+  </div>
+
+  <h2>9. inline-table</h2>
+  <div class="example">
+    <table style="display: inline-table; border: 1px solid black;">
+      <tr><td>Cell</td></tr>
+    </table>
+  </div>
+
+  <h2>10. list-item</h2>
+  <div class="example list-item">This looks like a list item</div>
+
+  <h2>11. run-in</h2>
+  <div class="example">
+    <h3 class="run-in">Run-in heading</h3>
+    <p>Some content follows</p>
+  </div>
+
+  <h2>12 Table Display Values</h2>
+  <div class="example table">
+    <div class="table-caption">Caption (table-caption)</div>
+    <div class="table-row">
+      <div class="table-cell">Cell 1</div>
+      <div class="table-cell">Cell 2</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell">Cell 3</div>
+      <div class="table-cell">Cell 4</div>
+    </div>
+  </div>
+
+  <h2>20. none</h2>
+  <div class="example none">You can't see me!</div>
+  <div class="example">Visible element</div>
+
+  <h2>21. initial</h2>
+  <div class="example">
+    <span style="display: initial; background: #ffebcc;">Back to default</span>
+  </div>
+
+  <h2>22. inherit</h2>
+  <div class="example inherit-wrapper">
+    <div class="inherit">Inherits flex from parent</div>
+  </div>
+
+</body>
+</html>
