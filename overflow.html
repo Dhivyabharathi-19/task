@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS overflow-x and overflow-y Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .container {
+      width: 300px;
+      height: 150px;
+      border: 2px solid #333;
+      margin-bottom: 30px;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+    .content {
+      width: 500px;
+      height: 200px;
+      background-color: lightblue;
+    }
+
+    h2 {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS overflow-x and overflow-y Property Examples</h1>
+
+  <h2>1. overflow-x: visible; overflow-y: visible;</h2>
+  <div class="container" style="overflow-x: visible; overflow-y: visible;">
+    <div class="content">Content overflows both horizontally and vertically, but is visible outside the box.</div>
+  </div>
+
+  <h2>2. overflow-x: hidden; overflow-y: scroll;</h2>
+  <div class="container" style="overflow-x: hidden; overflow-y: scroll;">
+    <div class="content">Horizontal overflow is hidden; vertical overflow can be scrolled.</div>
+  </div>
+
+  <h2>3. overflow-x: scroll; overflow-y: hidden;</h2>
+  <div class="container" style="overflow-x: scroll; overflow-y: hidden;">
+    <div class="content">Horizontal overflow can be scrolled; vertical overflow is hidden.</div>
+  </div>
+
+  <h2>4. overflow-x: auto; overflow-y: auto;</h2>
+  <div class="container" style="overflow-x: auto; overflow-y: auto;">
+    <div class="content">Scrollbars appear only when content overflows.</div>
+  </div>
+
+</body>
+</html>
