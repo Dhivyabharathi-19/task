@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max-width</title>
+    <style>
+        .fixed-width {
+          width: 300px;
+          background-color: lightblue;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+    
+        .max-width {
+          max-width: 500px;
+          background-color: lightgreen;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+    
+        .min-width {
+          min-width: 200px;
+          background-color: lightcoral;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+      </style>
+</head>
+<body>
+    <div class="fixed-width">
+        This box has a fixed width of 300px.
+      </div>
+    
+      <div class="max-width">
+        This box has a max-width of 500px. Resize the window to see it stop growing beyond 500px.
+      </div>
+    
+      <div class="min-width">
+        This box has a min-width of 200px. Resize the window smaller, and it won’t shrink below 200px.
+      </div>
+</body>
+</html>
