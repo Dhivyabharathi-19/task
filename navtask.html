@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nav</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+    }
+
+    .nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      background-color: rgb(237, 76, 130);
+      border-radius: 5px;
+    }
+
+    .nav li a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav li a.active {
+      border-radius: 5px;
+      background-color: palegreen;
+    }
+
+    .nav li a:hover {
+      background-color: grey;
+      cursor: pointer;
+    }
+
+    .content {
+      width: 75%;
+      padding: 20px;
+      font-family:serif;
+  
+      background-color: palevioletred;
+    }
+    .container h1{
+        text-transform: uppercase;
+        font-size: 22px;
+        text-align: center;
+        color: black;
+    }
+    .content p{
+          
+         color: white;
+          }
+    .content ol {
+         color: white;
+    }
+    .content img{
+         
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        
+    }
+    .footer p{
+       text-align: center;
+       color: black;
+       padding-top: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .nav {
+        width: 100%;
+        
+      }
+      .nav ul  li a{
+        position: sticky;
+      }
+
+      .content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <ul class="nav">
+      <li><a class="active" href="#home">Home</a></li>
+      
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="content">
+      <h1>Rose</h1>
+      <p>Rose is a flower so beautiful that it has invoked inspiration in several artists and poets. Children are familiar with the rose and other such flowers right from toddlerhood when they took strolls in the garden, to the time they started enjoying picture books, to learning the alphabet ‘R’ for rose. The flower may have been a part of their home décor, or a gift they gave someone on an occasion.</p>
+
+         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ifg6jBAYM817SmAYZRV5oadMJmS2f6RqFpZKrK3G5wlCjsV_JGhjPvXqwSLDVB96zLZICF4H_2Vxlz72BsemITGyNrw9yzSPJeYEpA"  alt="rose1">
+         <img src="https://exoticflora.in/cdn/shop/products/1_955c4a81-5f4f-4f15-8fb0-7f731d94a89a_1080x.jpg?v=1625566805" alt="rose2">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY2VDq3NKfZr_HT9zc4fuDsppx-quLDqD_Q&s" alt="rose3">
+         <img src="https://www.bhg.com/thmb/o26ZiZ-c9C7ct8UmSFu_Ff2sVGI=/1676x0/filters:no_upscale():strip_icc()/blooming-light-pink-roses-00866f008bac4418a48b8d9a63b3cb0a.jpg" alt="rose4">
+      <ol>
+        
+        <li>Rose is one of the most beautiful flowers among several others.</li>
+        <li>It has beautiful petals and a stem that is usually full of thorns.</li>
+        <li>Roses can be found in many colours, out of which red and white are more common.</li>
+        <li>There are also pink and yellow roses.</li>
+        <li>Apart from their beautiful look, roses have a wonderful fragrance that freshens up any space.</li>
+        <li>Roses are very popular and are among the most preferred flowers for gifting.</li>
+        <li>A special ‘Rose Day’ is celebrated on February 12 every year, when people gift each other roses to signify their affection.</li>
+        <li>The flower has several beneficial properties, which is why many natural cosmetics use rose-derived products like:
+      
+      </ol>
+      <img src="https://www.bhg.com/thmb/o26ZiZ-c9C7ct8UmSFu_Ff2sVGI=/1676x0/filters:no_upscale():strip_icc()/blooming-light-pink-roses-00866f008bac4418a48b8d9a63b3cb0a.jpg" alt="rose2">
+       <img src="https://exoticflora.in/cdn/shop/products/1_955c4a81-5f4f-4f15-8fb0-7f731d94a89a_1080x.jpg?v=1625566805" alt="rose2">
+      
+      
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnRN72a-iamzrNmtWbAC7SJVkjCVyCLaJng&s" alt="rose1">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcjMnwHgBz3XMTkkHyorr7VqngoUynwAAMgw&s" alt="rose2">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY2VDq3NKfZr_HT9zc4fuDsppx-quLDqD_Q&s" alt="rose3">
+       <img src="https://nurserylive.com/cdn/shop/products/nurserylive-plants-rose-red-plant-16969265840268.jpg?v=1674656824" alt="rose4">
+       
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdhAiSXWtit2oasLUfLW6OAsZIr87CQCbLAQ&s" alt="rose5">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLU_MoU6tTDzltgrTZuRx0yHcbLF7v7XCeow&s" alt="rose6">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbgv0UYAwuDdrmpCB_lHSS_dgsUsWhCf6FLg&s" alt="rose7">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3KLsKw0jLKi6EOWlMs2QnOvqlopxW-8i54w&s" alt="rose8">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFB5XEQq5sjB1wDuWPn_9V5uE2iTFb4yR8OA&s" alt="rose9">
+       <img src="https://cms.interiorcompany.com/wp-content/uploads/2024/01/about-face-types-of-roses.jpg" alt="rose10">
+           
+
+       <footer class="footer">
+        <p>&copy; 2025 Rose World. All rights reserved.</p>
+      </footer>
+      
+
+    </div>
+    
+  </div>
+</body>
+</html>
