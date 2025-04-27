@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Align</title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+        }
+        h2{
+            text-transform: capitalize;
+        }
+        .container{
+            padding: 10px;
+            margin-bottom: 20px;
+            background: rgb(227, 140, 202);
+            color: black;
+          }
+          .left{
+            text-align: left;
+          }
+          .Right{
+            text-align: right;
+          }
+          .center{
+            text-align: center;
+          }
+          .container1 {
+      padding: 10px;
+      margin-bottom: 20px;
+      background: rgb(171, 203, 221);
+      color: black;
+      font-size: 18px;
+    }
+
+    img {
+      width: 10px;
+      height: 10px;
+    }
+
+    .top img {
+      vertical-align: top;
+    }
+
+    .bottom img {
+      vertical-align: bottom;
+    }
+
+    .baseline img {
+      vertical-align: baseline;
+    }
+
+    .middle img {
+      vertical-align: middle;
+    }
+
+    .sub img {
+      vertical-align: sub;
+    }
+
+    .super img {
+      vertical-align: super;
+    }
+    .container3 {
+    display: flex;
+
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: rgb(177, 245, 186);
+    color: black;
+    font-size: 18px;
+    gap: 10px;
+  }
+    .baseline1 img {
+      align-self: baseline;
+    }
+    .stretch{
+        align-self: stretch;
+    }
+    .flex-start1{
+        align-self: flex-start;
+    }
+    .flex-end1{
+        align-self: flex-end;
+    }
+    .center1{
+        align-self: center;
+    }
+    .container4 img{
+        width:200px;
+        height: 200px;
+    }
+    .container4 {
+    
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+    background: rgb(223, 232, 189);
+    color: black;
+    font-size: 18px;
+    height: 200px;
+  }
+
+  .flex-start2,
+  .flex-end2,
+  .center2,
+  .space-between,
+  .space-around,
+  .space-evenly {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 10px;
+  }
+
+  .flex-start2 {
+    align-content: flex-start;
+  }
+
+  .flex-end2 {
+    align-content: flex-end;
+  }
+
+  .center2 {
+    align-content: center;
+  }
+
+  .space-between {
+    align-content: space-between;
+  }
+
+  .space-around {
+    align-content: space-around;
+  }
+
+  .space-evenly {
+    align-content: space-evenly;
+  }
+
+  .container4 img {
+    width: 100px;
+    height: 100px;
+   
+  }
+    </style>
+</head>
+<body>
+    <h1>Text Align</h1>
+    <div class="container">
+        <div class="left">
+             <h2>Left</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="Right">
+             <h2>Right</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="center">
+             <h2>center</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="Justify">
+             <h2>Justify</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+
+    <h1>Vertical-align</h1>
+
+    <div class="container1 baseline">
+      <h2>Baseline</h2>
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnRN72a-iamzrNmtWbAC7SJVkjCVyCLaJng&s" alt="rose"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+  
+    <div class="container1 top">
+      <h2>Top</h2>
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnRN72a-iamzrNmtWbAC7SJVkjCVyCLaJng&s" alt="rose"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+  
+    <div class="container1 middle">
+      <h2>Middle</h2>
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnRN72a-iamzrNmtWbAC7SJVkjCVyCLaJng&s" alt="rose"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+  
+    <div class="container1 bottom">
+      <h2>Bottom</h2>
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnRN72a-iamzrNmtWbAC7SJVkjCVyCLaJng&s" alt="rose"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+  
+    <div class="container1 sub">
+      <h2>Sub</h2>
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnRN72a-iamzrNmtWbAC7SJVkjCVyCLaJng&s" alt="rose"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+  
+    <div class="container1 super">
+      <h2>Super</h2>
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnRN72a-iamzrNmtWbAC7SJVkjCVyCLaJng&s" alt="rose"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+
+
+
+    <h1>align-items</h1> 
+
+    <div class="container3">
+      <h2>stretch</h2>
+      <div class="stretch">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    
+    <div class="container3">
+      <h2>flex-start</h2>
+      <div class="flex-start1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    
+    <div class="container3">
+      <h2>flex-end</h2>
+      <div class="flex-end1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    
+    <div class="container3">
+      <h2>center</h2>
+      <div class="center1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    
+    <div class="container3">
+      <h2>Baseline</h2>
+      <div class="baseline1">
+        <p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnRN72a-iamzrNmtWbAC7SJVkjCVyCLaJng&s" alt="rose" height="40">
+          Lorem ipsum dolor sit amet consectetur adipisicing.
+        </p>
+      </div>
+    </div>
+
+
+
+    <h1>align-content</h1>
+    <div class="container4">
+        <h2>Flex-Start</h2>
+        <div class="flex-start2">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ifg6jBAYM817SmAYZRV5oadMJmS2f6RqFpZKrK3G5wlCjsV_JGhjPvXqwSLDVB96zLZICF4H_2Vxlz72BsemITGyNrw9yzSPJeYEpA" alt="rose">
+          <img src="https://www.bhg.com/thmb/o26ZiZ-c9C7ct8UmSFu_Ff2sVGI=/1676x0/filters:no_upscale():strip_icc()/blooming-light-pink-roses-00866f008bac4418a48b8d9a63b3cb0a.jpg" alt="rose2">
+        </div>
+      </div>
+      
+      <div class="container4">
+        <h2>Flex-End</h2>
+        <div class="flex-end2">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ifg6jBAYM817SmAYZRV5oadMJmS2f6RqFpZKrK3G5wlCjsV_JGhjPvXqwSLDVB96zLZICF4H_2Vxlz72BsemITGyNrw9yzSPJeYEpA" alt="rose">
+          <img src="https://www.bhg.com/thmb/o26ZiZ-c9C7ct8UmSFu_Ff2sVGI=/1676x0/filters:no_upscale():strip_icc()/blooming-light-pink-roses-00866f008bac4418a48b8d9a63b3cb0a.jpg" alt="rose2">
+        </div>
+      </div>
+      
+      <div class="container4">
+        <h2>Center</h2>
+        <div class="center2">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ifg6jBAYM817SmAYZRV5oadMJmS2f6RqFpZKrK3G5wlCjsV_JGhjPvXqwSLDVB96zLZICF4H_2Vxlz72BsemITGyNrw9yzSPJeYEpA" alt="rose">
+          <img src="https://www.bhg.com/thmb/o26ZiZ-c9C7ct8UmSFu_Ff2sVGI=/1676x0/filters:no_upscale():strip_icc()/blooming-light-pink-roses-00866f008bac4418a48b8d9a63b3cb0a.jpg" alt="rose2">
+        </div>
+      </div>
+      
+      <div class="container4">
+        <h2>Space-Between</h2>
+        <div class="space-between">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ifg6jBAYM817SmAYZRV5oadMJmS2f6RqFpZKrK3G5wlCjsV_JGhjPvXqwSLDVB96zLZICF4H_2Vxlz72BsemITGyNrw9yzSPJeYEpA" alt="rose">
+          <img src="https://www.bhg.com/thmb/o26ZiZ-c9C7ct8UmSFu_Ff2sVGI=/1676x0/filters:no_upscale():strip_icc()/blooming-light-pink-roses-00866f008bac4418a48b8d9a63b3cb0a.jpg" alt="rose2">
+        </div>
+      </div>
+      
+      <div class="container4">
+        <h2>Space-Around</h2>
+        <div class="space-around">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ifg6jBAYM817SmAYZRV5oadMJmS2f6RqFpZKrK3G5wlCjsV_JGhjPvXqwSLDVB96zLZICF4H_2Vxlz72BsemITGyNrw9yzSPJeYEpA" alt="rose">
+          <img src="https://www.bhg.com/thmb/o26ZiZ-c9C7ct8UmSFu_Ff2sVGI=/1676x0/filters:no_upscale():strip_icc()/blooming-light-pink-roses-00866f008bac4418a48b8d9a63b3cb0a.jpg" alt="rose2">
+        </div>
+      </div>
+      
+      <div class="container4">
+        <h2>Space-Evenly</h2>
+        <div class="space-evenly">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ifg6jBAYM817SmAYZRV5oadMJmS2f6RqFpZKrK3G5wlCjsV_JGhjPvXqwSLDVB96zLZICF4H_2Vxlz72BsemITGyNrw9yzSPJeYEpA" alt="rose">
+          <img src="https://www.bhg.com/thmb/o26ZiZ-c9C7ct8UmSFu_Ff2sVGI=/1676x0/filters:no_upscale():strip_icc()/blooming-light-pink-roses-00866f008bac4418a48b8d9a63b3cb0a.jpg" alt="rose2">
+        </div>
+      </div>
+</body>
+</html>
