@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive form</title>
+    <style>
+             body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: blanchedalmond;
+             }
+             .form-container{
+                background-color: aquamarine;
+                padding: 30px;
+                width: 350px;
+                border-radius: 12px;
+                box-shadow: 0px 15px black;
+             }
+             .form-container h2{
+                 color: green;
+                 text-align: center;
+                 margin-bottom: 20px;
+             }
+             .input-group{
+                 display: flex;
+                 flex-direction: column;
+                 margin-bottom: 15px;
+             }
+             .input-group label{
+                 font-weight: bold;
+                 margin-bottom: 5px;
+             }
+             .input-group input,.input-group textarea{
+                border: 3px solid grey;
+                border-radius: 5px;
+                font-size: 14px;
+                padding: 10px;
+                resize: none;
+                transition: border-color 0.3s ;
+             }
+             .input-group input:focus, .input-group textarea:focus{
+                   border-color: blue;
+                   outline: none;
+             }
+             .input-group{
+                transition: width 0.8s ease-in-out;
+             }
+             button{
+                background: green;
+                padding: 12px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 15px;
+                width: 100%;
+
+             }
+             button:hover{
+                background:blue;
+
+             }
+             @media  (max-width:400px) {
+                 .form-container{
+                    width: 90%;
+                    padding: 20px;
+                 }
+                 .form-container h2{
+                    font-size: 22px;
+                 }
+                 button{
+                    font-size: 14px;
+                    padding: 10px;
+                 }
+             }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="www.google.com">
+          <h2>Contact Us</h2>
+         <div class="input-group">
+             <label for="name">Name</label>
+            <input type="text"  id="name" placeholder="Name">
+         </div><br><br>
+
+         <div class="input-group">
+            <label for="email">Email</label>
+           <input type="email"  id="email" placeholder="email">
+        </div><br><br>
+       
+        <div class="input-group">
+            <label for="email">Message</label>
+          <textarea></textarea>
+        </div>
+        <br><br>
+
+      <center>  <button>Send Me</button></center>
+
+
+        </form>
+       
+    </div>
+</body>
+</html>
