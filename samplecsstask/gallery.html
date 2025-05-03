@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gallery</title>
+    <style>
+        body {
+            background: rgb(235, 200, 235);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 10px;
+        }
+    
+        h1 {
+            color: rgb(102, 2, 102);
+            text-align: center;
+        }
+    
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+    
+        .gallery {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 30%;
+            box-sizing: border-box;
+        }
+    
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    
+        .gallery:hover {
+            border: 1px solid rebeccapurple;
+            box-shadow: 0px 10px 9px purple;
+        }
+    
+        .description {
+            padding: 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+    
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .gallery {
+                width: 45%;
+            }
+        }
+    
+        @media (max-width: 600px) {
+            .gallery {
+                width: 100%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Gallery</h1>
+<div class="container">
+  
+    <div class="gallery">
+        <a href="https://cdn.shopify.com/s/files/1/1295/4853/files/3_In_Post_-_1200px_x_700px_-_6_Types_of_Blooming_Flowers_Perfect_for_Different_Seasons.png?v=1706671308" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/1295/4853/files/3_In_Post_-_1200px_x_700px_-_6_Types_of_Blooming_Flowers_Perfect_for_Different_Seasons.png?v=1706671308" alt="g2">
+        </a>
+        <div class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a href="https://images.immediate.co.uk/production/volatile/sites/10/2018/02/4f492b22-2d29-4360-80a6-79879487c7b7-e07922e.jpg?quality=90&fit=700,466" target="_blank">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/10/2018/02/4f492b22-2d29-4360-80a6-79879487c7b7-e07922e.jpg?quality=90&fit=700,466" alt="g3">
+        </a>
+        <div class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a href="https://hgtvhome.sndimg.com/content/dam/images/grdn/fullset/2013/3/25/0/Original_cosmos-flowers.jpg.rend.hgtvcom.616.462.suffix/1452655274302.jpeg" target="_blank">
+            <img src="https://hgtvhome.sndimg.com/content/dam/images/grdn/fullset/2013/3/25/0/Original_cosmos-flowers.jpg.rend.hgtvcom.616.462.suffix/1452655274302.jpeg" alt="g4">
+        </a>
+        <div class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a href="https://cdn.direct2florist.com/uploads/Direct2florist/flower-types/Daisy-sm-min.jpg" target="_blank">
+            <img src="https://cdn.direct2florist.com/uploads/Direct2florist/flower-types/Daisy-sm-min.jpg" alt="g5">
+        </a>
+        <div class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a href="https://www.flowers-gardens.net/images/types-of-flowers.jpg" target="_blank">
+            <img src="https://www.flowers-gardens.net/images/types-of-flowers.jpg" alt="g6">
+        </a>
+        <div class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8URUpwyUe2q4FSDgHuOdWRcIPbFxUSgIofQ&s" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8URUpwyUe2q4FSDgHuOdWRcIPbFxUSgIofQ&s" alt="g7">
+        </a>
+        <div class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a href="https://images.ctfassets.net/i3tkg7dt3kro/7LNMqiXrVbsFZw8dXgQJ00/62a4a5cc7eeec1cb4c1a36a58f8bd972/flower-197343.jpg" target="_blank">
+            <img src="https://images.ctfassets.net/i3tkg7dt3kro/7LNMqiXrVbsFZw8dXgQJ00/62a4a5cc7eeec1cb4c1a36a58f8bd972/flower-197343.jpg" alt="g8">
+        </a>
+        <div class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+        </div>
+    </div>
+
+<div class="gallery">
+    <a href="https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659_640.jpg" target="_blank">
+        <img src="https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659_640.jpg" alt="g8">
+    </a>
+    <div class="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+    </div>
+</div>
+
+ <div class="gallery">
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyT0duURt0eTWLjFZn3nmsKyyRy-oS02AJKQV8ow_DLUq2LFEDXVde1HV8RFsr3suovAI&usqp=CAU" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyT0duURt0eTWLjFZn3nmsKyyRy-oS02AJKQV8ow_DLUq2LFEDXVde1HV8RFsr3suovAI&usqp=CAU" alt="g8">
+    </a>
+    <div class="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+    </div>
+</div>
+<div class="gallery">
+    <a href="https://beejwala.com/cdn/shop/files/LotusSeedsBeejwala_3_600x.png?v=1694191560" target="_blank">
+        <img src="https://beejwala.com/cdn/shop/files/LotusSeedsBeejwala_3_600x.png?v=1694191560" alt="g8">
+    </a>
+    <div class="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+    </div>
+</div>
+
+<div class="gallery">
+    <a href="https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/plumeria-2-Eric-Tessmer-Flickr-1024x708.jpg" target="_blank">
+        <img src="https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/plumeria-2-Eric-Tessmer-Flickr-1024x708.jpg" alt="g8">
+    </a>
+    <div class="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+    </div>
+</div>
+<div class="gallery">
+    <a href="https://static.vecteezy.com/system/resources/thumbnails/034/564/530/small_2x/beautiful-water-lily-flower-with-water-drops-ai-generated-photo.jpg" target="_blank">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/034/564/530/small_2x/beautiful-water-lily-flower-with-water-drops-ai-generated-photo.jpg" alt="g8">
+    </a>
+    <div class="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, corporis.
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SampleCsstask</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      gap:100px;
+      background: rgb(200, 97, 200);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar ul li {
+      padding: 10px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar ul li:hover {
+      background:grey;
+      padding: 10px 15px;
+    }
+
+   
+
+    .navbar ul li a.active {
+      background-color: rgb(195, 238, 195);
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    .content {
+      background: rgb(235, 200, 235);
+      padding: 20px;
+      
+    }
+    .content h1{
+        color: rgb(102, 2, 102);
+        text-align: center;
+    }
+    .content img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+ 
+}
+
+.content img:hover {
+  transform: scale(1.1); 
+  z-index: 1;
+}
+
+    .content p{
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .content .para{
+      text-align: justify;
+      padding: 0px 40px;
+    }
+    .dropdown{
+      position: relative;
+    }
+    
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(200, 97, 200);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content li {
+  padding: 10px;
+}
+
+.dropdown .dropdown-content li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer{
+  text-align: center;
+  padding-top: 20px;
+  color: red;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+      }
+
+      .content .para {
+        padding: 0 20px;
+      }
+
+      .content img {
+        max-width: 90%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar ul li {
+        padding: 8px;
+      }
+
+      .navbar ul li a.active {
+        padding: 3px 6px;
+        font-size: 14px;
+      }
+
+      .content h1 {
+        font-size: 22px;
+      }
+
+      .content p,
+      .content .para {
+        font-size: 15px;
+      }
+
+      .content .para {
+        padding: 0 15px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li class="dropdown">
+      <a href="#contact">Contact</a>
+      <ul class="dropdown-content">
+        <li><a href="#">Email:flower@gmail.com</a></li>
+        <li><a href="#">Call Us :9876543210</a></li>
+        <li><a href="#">Address :23,north street  ,chennai</a></li>
+      </ul>
+    </li>
+    <li class="login"><a href="login.html" class="active">Login</a></li>
+  </ul>
+</div>
+
+<div class="content">
+    <h1>Flowers</h1>
+     
+    <p>There is no argument, roses are hands down the “it” flower. The rose is, throughout history, the most widely recognized and celebrated flower. Across a broad spectrum of mediums you will find roses on display, a fantastic feast for the senses. And the common theme in this multitude of appearances you ask?  Love and romance, of course!  The rose is not only beautiful, but also versatile.  Roses can be used in literally any type of design, from classic to contemporary, there is nowhere roses can’t shine. A mind boggling number of vibrant colors, sizes, and shapes, there are so many commercially grown varieties available in the market that it’s safe to say the stunning designs that can be created using roses will continue to leave us breathless until the end of time.</p>
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ifg6jBAYM817SmAYZRV5oadMJmS2f6RqFpZKrK3G5wlCjsV_JGhjPvXqwSLDVB96zLZICF4H_2Vxlz72BsemITGyNrw9yzSPJeYEpA"  alt="rose">
+    <img src="https://exoticflora.in/cdn/shop/products/1_955c4a81-5f4f-4f15-8fb0-7f731d94a89a_1080x.jpg?v=1625566805" alt="rose2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY2VDq3NKfZr_HT9zc4fuDsppx-quLDqD_Q&s" alt="rose2">
+    <img src="https://www.bhg.com/thmb/o26ZiZ-c9C7ct8UmSFu_Ff2sVGI=/1676x0/filters:no_upscale():strip_icc()/blooming-light-pink-roses-00866f008bac4418a48b8d9a63b3cb0a.jpg" alt="rose2">
+
+ <p class="para"> Fragrant essential oils from rose flowers are added to perfumes and candles. </p>
+
+ <p class="para">  Rose extracts and essential oil are also added to hair care products as they are nourishing and moisturising. </p>
+
+<p class="para">Rose water (a by-product from rose oil production) is a popular ingredient in facial mists and toners.
+ </p>
+ <div class="footer">
+  <p>&copy; 2025 Flower World. All rights reserved.</p>
+</div>
+
+</div>
+
+
+</body>
+</html>
