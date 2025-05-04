@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>border-image-repeat Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .box {
+      border: 15px solid transparent;
+      padding: 30px;
+      margin: 30px auto;
+      width: 60%;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: white;
+      border-image-source: url('https://img.freepik.com/free-vector/decorative-ornamental-frame_1048-5554.jpg?t=st=1746258933~exp=1746262533~hmac=0cf69b36fdf101585011f06723e22264c89f4309a8a3bb0b777380da6389417d&w=826');
+      border-image-slice: 30;
+      border-image-outset: 10px;
+    }
+
+    .stretch {
+      border-image-repeat: stretch;
+    }
+
+    .repeat {
+      border-image-repeat: repeat;
+    }
+
+    .round {
+      border-image-repeat: round;
+    }
+
+    .space {
+      border-image-repeat: space;
+    }
+
+    h2 {
+      margin-top: 60px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>border-image-repeat: stretch</h2>
+  <div class="box stretch">STRETCH - The border image is stretched to fill the area.</div>
+
+  <h2>border-image-repeat: repeat</h2>
+  <div class="box repeat">REPEAT - The border image is tiled; may get clipped if not fitting exactly.</div>
+
+  <h2>border-image-repeat: round</h2>
+  <div class="box round">ROUND - The image is tiled and scaled to fit without clipping.</div>
+
+  <h2>border-image-repeat: space</h2>
+  <div class="box space">SPACE - The image is tiled and space is evenly distributed between tiles.</div>
+
+</body>
+</html>
