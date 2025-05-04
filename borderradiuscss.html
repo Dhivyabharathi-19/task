@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Border Radius Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+
+   
+    .radius-all {
+      background-color: steelblue;
+      border: 2px solid navy;
+      border-radius: 20px;
+    }
+
+   
+    .radius-diff {
+      background-color: darkorange;
+      border: 2px solid orangered;
+      border-radius: 10px 30px 50px 70px;
+    }
+
+ 
+    .radius-top {
+      background-color: darkseagreen;
+      border: 2px solid seagreen;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+  
+    .radius-bottom {
+      background-color: darkviolet;
+      border: 2px solid indigo;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+ 
+    .radius-circle {
+      background-color: tomato;
+      border: 2px solid brown;
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+   
+    .radius-ellipse {
+      background-color: teal;
+      border: 2px solid darkslategray;
+      border-radius: 50px / 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Border Radius Different Properties</h1>
+
+  <div class="container">
+    <div class="box radius-all">All Corners = 20px</div>
+    <div class="box radius-diff">10px 30px 50px 70px</div>
+    <div class="box radius-top">Only Top Corners Rounded</div>
+    <div class="box radius-bottom">Only Bottom Corners Rounded</div>
+    <div class="box radius-ellipse">Elliptical: 50px / 25px</div>
+  </div>
+
+  <br><br>
+  <div class="radius-circle">Circle</div>
+
+</body>
+</html>
