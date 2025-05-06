@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Attribute Selectors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1{
+        text-align: center;
+        color:green;
+    }
+
+    input[type="text"] {
+      border: 2px solid blue;
+      padding: 8px;
+    }
+
+    a[target="_blank"] {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    img[src$=".jpg"] {
+      width: 300px;
+      border: 2px solid black;
+      display: block;
+      margin: 10px 0;
+    }
+
+    [class|="top"] {
+      background: yellow;
+      border: 2px solid greenyellow;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    [class*="te"] {
+      background: rgb(190, 190, 180);
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    [title~="flower"] {
+      border: 5px solid green;
+      opacity: 1;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    div[class^="test"] {
+      background: salmon;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+
+    .nav-links li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    form input {
+      margin-bottom: 15px;
+      width: 300px;
+      display: block;
+    }
+
+    .gallery {
+      margin-top: 20px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Css Selectors</h1>
+  <h2>User Registration</h2>
+  <form action="https://www.google.com">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Enter your full name" />
+
+    <label for="address">Address</label>
+    <input type="text" id="address" placeholder="Enter your address" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" />
+
+    <label for="number">Phone Number</label>
+    <input type="number" id="number" placeholder="Enter your number" />
+  </form>
+
+  <h2>Navigation</h2>
+  <ul class="nav-links">
+    <li><a href="home.html" target="_blank">Home</a></li>
+    <li><a href="#" target="_blank">About Us</a></li>
+    <li><a href="#" target="_blank">Services</a></li>
+    <li><a href="#" target="_blank">Contact</a></li>
+  </ul>
+
+  <h2>Product Gallery</h2>
+  <div class="gallery">
+    <a href="https://thumbs.dreamstime.com/b/pink-flowers-float-clear-waters-hawaii-soft-white-sand-below-347952870.jpg" target="_blank">
+      <img src="https://thumbs.dreamstime.com/b/pink-flowers-float-clear-waters-hawaii-soft-white-sand-below-347952870.jpg" alt="Earphones">
+    </a>
+    <div class="description">
+      High-quality noise-cancelling earphones perfect for music lovers.
+    </div>
+  </div>
+
+  <h2>Feature Highlights</h2>
+  <div class="top-triangle">Top-rated design for modern homes.</div>
+  <div class="triangle-top">Elegant and ergonomic interface.</div>
+
+  <h2>Testimonials</h2>
+  <div class="testimonal">"Absolutely love the service!" – Sarah</div>
+  <div class="test1">"Reliable and affordable." – John</div>
+
+  <h2 title="flower garden">Our Flower Collection</h2>
+  <p title="fresh flowers collection">Explore vibrant and fresh seasonal flowers.</p>
+
+  <h2>Additional Info</h2>
+  <div class="test-monal">Elegant presentation and smooth functionality.</div>
+  <div class="second-test">Designed with the user in mind.</div>
+  <div class="test-1">Optimized for performance and accessibility.</div>
+
+</body>
+</html>
