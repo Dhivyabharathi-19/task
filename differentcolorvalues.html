@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Examples</title>
+  <style>
+    .named {
+  background-color: green;
+  opacity: 0.3;
+}
+
+.hex {
+  background-color: #ff0000;
+  opacity: 1.0;
+}
+
+.rgb {
+  background-color: rgb(255, 0, 0);
+  opacity: 0.6;
+}
+
+.rgba {
+  background-color: blue;
+}
+
+.hsl {
+  background-color: hsl(0, 100%, 50%);
+  opacity: 0.5;
+}
+
+.hsla {
+  background-color: hsla(0, 100%, 50%, 0.8);
+}
+
+.current {
+  color: green;
+  background-color: currentColor;
+}
+
+.transparent {
+  background-image: url(images/pofileimg.jpeg);
+  width: 300px;
+  height: 400px;
+  color: blue;
+  border: 2px solid red;
+  background-color: transparent;
+}
+
+.inherit {
+  background-color: inherit;
+}
+
+  </style>
+  </head>
+<body>
+
+  <div class="named"><p>Named Color</p></div>
+  <div class="hex"><p>Hex Color</p></div>
+  <div class="rgb"><p>RGB Color</p></div>
+  <div class="rgba"><p>RGBA Color</p></div>
+  <div class="hsl"><p>HSL Color</p></div>
+  <div class="hsla"><p>HSLA Color</p></div>
+  <div class="current"><p>CurrentColor</p></div>
+  <div class="transparent">
+    <p>Transparent Background</p>
+    <div class="inherit"><p>Inherit Color</p></div>
+  </div>
+
+</body>
+</html>
