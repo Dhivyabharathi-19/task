@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text Shadow </title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-shadow: -2px -2px 4px black, 2px 2px 6px #39ff14;
+      color: white;
+      padding: 20px;
+      margin-bottom: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      box-shadow: inset 5px 5px 10px rgba(154, 205, 50, 0.5);
+    }
+
+    .card {
+      width: 320px;
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card .text {
+      padding: 20px;
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Elegant Garden Rose</h1>
+
+  <div class="card">
+    <img src="https://wildroots.in/wp-content/uploads/2020/10/0d6898324f68aef68eeeee70ae36b163.jpg" alt="Red Rose in Garden">
+    <div class="text">
+      This vibrant red rose captures the essence of beauty and serenity found in nature.
+    </div>
+  </div>
+
+</body>
+</html>
