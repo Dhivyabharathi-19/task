@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text Overflow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1{
+        text-align: center;
+        color: blueviolet;
+    }
+    .container {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .box {
+      border: 2px solid rebeccapurple;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .clip {
+      text-overflow: clip;
+    }
+
+    .ellipsis {
+      text-overflow: ellipsis;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text Overflow Property In Css</h1>
+  <div class="container">
+    <div class="label">text-overflow: clip</div>
+    <p class="box clip">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, doloremque!
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="label">text-overflow: ellipsis</div>
+    <p class="box ellipsis">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, doloremque!
+    </p>
+  </div>
+
+</body>
+</html>
