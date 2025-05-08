@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text Justify </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1{
+      text-align: center;
+      color: rebeccapurple;
+    }
+    .example {
+      border: 2px solid #333;
+      padding: 15px;
+      margin-bottom: 30px;
+      width: 300px;
+    }
+    .label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+      color: #00509e;
+    }
+    .auto {
+      text-align: justify;
+      text-justify: auto;
+    }
+    .none {
+      text-align: justify;
+      text-justify: none;
+    }
+    .inter-word {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    .inter-character {
+      text-align: justify;
+      text-justify: inter-character;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text Justify Property In Css</h1>
+  <div class="example auto">
+    <span class="label">text-justify: auto</span>
+    This paragraph uses <strong>text-justify: auto</strong>. The browser automatically determines the best way to justify text.
+  </div>
+
+  <div class="example none">
+    <span class="label">text-justify: none</span>
+    This paragraph uses <strong>text-justify: none</strong>. No advanced justification method is applied.
+  </div>
+
+  <div class="example inter-word">
+    <span class="label">text-justify: inter-word</span>
+    This paragraph uses <strong>text-justify: inter-word</strong>. Justification adjusts spacing between words only.
+  </div>
+
+  <div class="example inter-character">
+    <span class="label">text-justify: inter-character</span>
+    This paragraph uses <strong>text-justify: inter-character</strong>. Justification adjusts spacing between individual characters.
+  </div>
+
+</body>
+</html>
