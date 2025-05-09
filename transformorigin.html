@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transform Origin </title>
+  <style>
+    .container {
+      display: flex;
+      gap: 30px;
+      margin: 50px;
+    }
+
+    .box {
+      width: 120px;
+      height: 120px;
+      background-color: lightcoral;
+      border: 2px solid black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      transform: rotate(20deg);
+    }
+
+    .origin-center {
+      transform-origin: center;
+    }
+
+    .origin-top-left {
+      transform-origin: top left;
+    }
+
+    .origin-bottom-right {
+      transform-origin: bottom right;
+    }
+
+    h2 {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS transform-origin demonstration</h2>
+  <div class="container">
+    <div class="box origin-center">Center</div>
+    <div class="box origin-top-left">Top Left</div>
+    <div class="box origin-bottom-right">Bottom Right</div>
+  </div>
+</body>
+</html>
