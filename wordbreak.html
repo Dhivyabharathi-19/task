@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Word Break Demo</title>
+  <style>
+    .container p {
+      border: 1px solid black;
+      height: 200px;
+      width: 400px;
+      word-break: break-word; 
+      padding: 10px;
+    }
+
+    .p1 {
+      border: 1px solid black;
+      height: 200px;
+      width: 100px;
+      margin-top: 20px;
+      word-break: break-all; 
+      padding: 10px;
+    }
+
+    .p2 {
+      border: 1px solid black;
+      height: 200px;
+      width: 100px;
+      margin-top: 20px;
+      word-break: keep-all;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>This paragraph uses <strong>word-break: break-word</strong>. Long unbreakable words will wrap to the next line to avoid overflow, but only at logical break points like hyphens.</p>
+  </div>
+
+  <p class="p1">This one uses <strong>word-break: break-all</strong>. Words will break at any character, even in the middle of a word, to avoid overflow.</p>
+
+  <p class="p2">This one uses <strong>word-break: keep-all</strong>. Words won't break, which may lead to overflow in small containers.</p>
+</body>
+</html>
