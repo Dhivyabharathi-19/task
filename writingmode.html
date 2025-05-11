@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Writing Mode </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.5;
+    }
+    h1{
+      text-align: center;
+      color: green;
+    }
+    .p1, .p2, .p3, .p4 {
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 200px;
+    }
+
+    .p1 {
+      writing-mode: horizontal-tb;
+      background-color: #f9f9f9;
+    }
+
+    .p2 {
+      writing-mode: vertical-rl;
+      background-color: #e6f7ff;
+    }
+
+    .p3 span {
+      writing-mode: vertical-lr;
+      display: inline-block;
+      background-color: #fff0f6;
+      padding: 5px;
+    }
+
+    .p4 {
+      writing-mode: horizontal-tb;
+      background-color: #e8ffe8;
+    }
+  </style>
+</head>
+<body>
+         <h1>WRITING MODE PROPERTY IN CSS</h1>
+
+  <p class="p1">This text is in the normal horizontal writing mode (left to right).</p>
+  
+  <p class="p2">This text flows vertically from top to bottom and right to left.</p>
+  
+  <p class="p3">Mix of directions: normal text followed by 
+    <span>vertical left-to-right</span> writing inside a span.</p>
+  
+  <p class="p4">Another standard paragraph using horizontal writing mode.</p>
+
+</body>
+</html>
