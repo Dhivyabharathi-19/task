@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Image Centering Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+    img{
+      width:100px;
+      height:100px;
+    }
+
+
+    .box {
+      border: 2px dashed #aaa;
+      margin-bottom: 30px;
+      height: 250px;
+      background-color: #f9f9f9;
+    }
+
+    /* Method 1: text-align center */
+    .text-align-center {
+      text-align: center;
+    }
+
+    /* Method 2: margin auto */
+    .margin-auto img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Method 3: Flexbox */
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Method 4: Grid */
+    .grid-center {
+      display: grid;
+      place-items: center;
+    
+    }
+
+    /* Method 5: Absolute Position + Transform */
+    .position-relative {
+      position: relative;
+    }
+
+    .absolute-center img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>CSS Image Centering Techniques</h1>
+
+  <h2>1. Center Horizontally using <code>text-align: center</code></h2>
+  <div class="box text-align-center">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/416851619/RI/PG/NM/31070511/lotus-flower.jpg" alt="Centered Image">
+  </div>
+
+  <h2>2. Center Horizontally using <code>margin: auto</code></h2>
+  <div class="box margin-auto">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/416851619/RI/PG/NM/31070511/lotus-flower.jpg" alt="Centered Image">
+  </div>
+
+  <h2>3. Center Horizontally & Vertically using <code>Flexbox</code></h2>
+  <div class="box flex-center">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/416851619/RI/PG/NM/31070511/lotus-flower.jpg" alt="Centered Image">
+  </div>
+
+  <h2>4. Center Horizontally & Vertically using <code>Grid</code></h2>
+  <div class="box grid-center">
+    <img  class="horver" src="https://5.imimg.com/data5/SELLER/Default/2024/5/416851619/RI/PG/NM/31070511/lotus-flower.jpg" alt="Centered Image">
+  </div>
+  <br>
+  <br>
+
+  <h2>5. Center using <code>Absolute Positioning + Transform</code></h2>
+  <div class="box position-relative absolute-center">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/416851619/RI/PG/NM/31070511/lotus-flower.jpg" alt="Centered Image">
+  </div>
+
+</body>
+</html>
