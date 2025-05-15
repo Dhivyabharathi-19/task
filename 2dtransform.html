@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 2D Transforms</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #4caf50;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      transition: 0.3s ease;
+    }
+
+    .translate     { transform: translate(50px, 20px); }
+    .translateX    { transform: translateX(50px); }
+    .translateY    { transform: translateY(30px); }
+
+    .scale         { transform: scale(1.5, 1.2); }
+    .scaleX        { transform: scaleX(1.5); }
+    .scaleY        { transform: scaleY(1.8); }
+
+    .rotate        { transform: rotate(45deg); }
+
+    .skew          { transform: skew(20deg, 10deg); }
+    .skewX         { transform: skewX(25deg); }
+    .skewY         { transform: skewY(15deg); }
+
+    .matrix        { transform: matrix(1, 0.5, -0.5, 1, 30, 20); }
+  </style>
+</head>
+<body>
+
+  <div class="box translate">translate</div>
+  <div class="box translateX">translateX</div>
+  <div class="box translateY">translateY</div>
+
+  <div class="box scale">scale</div>
+  <div class="box scaleX">scaleX</div>
+  <div class="box scaleY">scaleY</div>
+
+  <div class="box rotate">rotate</div>
+
+  <div class="box skew">skew</div>
+  <div class="box skewX">skewX</div>
+  <div class="box skewY">skewY</div>
+
+  <div class="box matrix">matrix</div>
+
+</body>
+</html>
