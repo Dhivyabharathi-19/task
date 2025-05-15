@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 3D Transforms Demo</title>
+  <style>
+    body {
+      background: #222;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .scene {
+      perspective: 600px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #4caf50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      transition: transform 0.5s;
+    }
+
+    .translate3d   { transform: translate3d(30px, 30px, 50px); }
+    .translateZ    { transform: translateZ(80px); }
+    .scale3d       { transform: scale3d(1.2, 1.2, 2); }
+    .scaleZ        { transform: scaleZ(2); }
+    .rotateX       { transform: rotateX(45deg); }
+    .rotateY       { transform: rotateY(45deg); }
+    .rotateZ       { transform: rotateZ(45deg); }
+    .rotate3d      { transform: rotate3d(1, 1, 0, 45deg); }
+
+    .preserve3d-parent {
+      width: 150px;
+      height: 150px;
+      background: #333;
+      transform-style: preserve-3d;
+      perspective: 600px;
+      margin: 20px auto;
+    }
+
+    .child {
+      width: 100px;
+      height: 100px;
+      background: tomato;
+      color: white;
+      transform: rotateY(60deg);
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scene"><div class="box translate3d">translate3d</div></div>
+  <div class="scene"><div class="box translateZ">translateZ</div></div>
+
+  <div class="scene"><div class="box scale3d">scale3d</div></div>
+  <div class="scene"><div class="box scaleZ">scaleZ</div></div>
+
+  <div class="scene"><div class="box rotateX">rotateX</div></div>
+  <div class="scene"><div class="box rotateY">rotateY</div></div>
+
+  <div class="scene"><div class="box rotateZ">rotateZ</div></div>
+  <div class="scene"><div class="box rotate3d">rotate3d</div></div>
+
+  <div class="preserve3d-parent">
+    <div class="child">preserve-3d</div>
+  </div>
+
+</body>
+</html>
