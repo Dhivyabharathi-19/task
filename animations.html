@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animation Examples</title>
+    <style>
+        .container {
+            margin-bottom: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        /* Example 1: animation-direction */
+        .direction-example {
+            background: lightblue;
+            animation-name: movebox;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; /* Try normal, reverse, alternate-reverse */
+        }
+
+        /* Example 2: animation-fill-mode */
+        .fillmode-example {
+            background: lightgreen;
+            animation-name: fillbox;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards; /* Try backwards, both, none */
+        }
+
+        /* Example 3: animation-play-state */
+        .playstate-example {
+            background: orange;
+            animation-name: playbox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-play-state: running; /* Try paused */
+        }
+
+
+        @keyframes movebox {
+            0% { left: 0; }
+            100% { left: 200px; }
+        }
+
+        @keyframes fillbox {
+            0% { left: 0; background: lightgreen; }
+            100% { left: 200px; background: darkgreen; }
+        }
+
+        @keyframes playbox {
+            0% { left: 0; }
+            100% { left: 200px; }
+        }
+
+   
+        h2 {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>1. animation-direction: alternate</h2>
+        <div class="box direction-example"></div>
+    </div>
+
+    <div class="container">
+        <h2>2. animation-fill-mode: forwards (after delay)</h2>
+        <div class="box fillmode-example"></div>
+    </div>
+
+    <div class="container">
+        <h2>3. animation-play-state: running</h2>
+        <div class="box playstate-example"></div>
+    </div>
+
+</body>
+</html>
