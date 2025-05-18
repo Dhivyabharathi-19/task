@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> CSS Buttons</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+   
+    .btn-ripple {
+      background-color: #28a745;
+    }
+
+    .btn-ripple::after {
+      content: "";
+      position: absolute;
+      background: rgba(255, 255, 255, 0.4);
+      width: 200%;
+      height: 200%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      transition: transform 0.6s ease, opacity 1s;
+      opacity: 0;
+    }
+
+    .btn-ripple:active::after {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      transition: 0s;
+    }
+
+   
+    .btn-pressed {
+      background-color: #007BFF;
+      box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+    }
+
+    .btn-pressed:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-pressed:active {
+      transform: translateY(4px);
+      box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+    }
+
+   
+    .btn-symbol {
+      background-color: #6f42c1;
+    }
+
+    .btn-symbol span {
+      display: inline-block;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    .btn-symbol span::after {
+      content: "»";
+      position: absolute;
+      right: -20px;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .btn-symbol:hover span {
+      padding-right: 20px;
+    }
+
+    .btn-symbol:hover span::after {
+      right: 0;
+      opacity: 1;
+    }
+
+    .btn-symbol:hover {
+      background-color: #5a32a3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    <button class="btn btn-ripple">Ripple Button</button>
+    <button class="btn btn-pressed">Pressed Button</button>
+    <button class="btn btn-symbol"><span>Next Step</span></button>
+  </div>
+
+</body>
+</html>
