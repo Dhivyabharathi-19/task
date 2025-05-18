@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timing Function Examples</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .btn {
+      width: 100px;
+      height: 100px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      transition-property: transform;
+      transition-duration: 2s;
+    }
+
+    /* Each class has a different timing function */
+    .ease {
+      transition-timing-function: ease;
+    }
+
+    .ease-in {
+      transition-timing-function: ease-in;
+    }
+
+    .ease-out {
+      transition-timing-function: ease-out;
+    }
+
+    .ease-in-out {
+      transition-timing-function: ease-in-out;
+    }
+
+    .linear {
+      transition-timing-function: linear;
+    }
+
+    .btn:hover {
+      transform: translateY(-100px);
+    }
+
+    p {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">CSS Transition Timing Function Examples</h2>
+  <div class="container">
+    <div>
+      <button class="btn ease">ease</button>
+      <p>ease</p>
+    </div>
+    <div>
+      <button class="btn ease-in">ease-in</button>
+      <p>ease-in</p>
+    </div>
+    <div>
+      <button class="btn ease-out">ease-out</button>
+      <p>ease-out</p>
+    </div>
+    <div>
+      <button class="btn ease-in-out">ease-in-out</button>
+      <p>ease-in-out</p>
+    </div>
+    <div>
+      <button class="btn linear">linear</button>
+      <p>linear</p>
+    </div>
+  </div>
+</body>
+</html>
