@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination In Printing</title>
+    <style>
+      @media print {
+        .page {
+          page-break-after: always;
+          padding: 20px;
+          border: 1px solid #ccc;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h2>Page 1</h2>
+      <p>Content for the first printed page...</p>
+    </div>
+
+    <div class="page">
+      <h2>Page 2</h2>
+      <p>Content for the second printed page...</p>
+    </div>
+  </body>
+</html>
