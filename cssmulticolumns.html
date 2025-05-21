@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Multi-Column Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .multi-column {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
+   
+      columns: 4 200px;
+      column-gap: 30px;
+      column-rule: 2px solid #3498db;
+      column-fill: balance;
+    }
+
+    .headLine {
+      column-span: all;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .headLine h1 {
+      font-size: 32px;
+      color: #e74c3c;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="multi-column">
+    <div class="headLine">
+      <h1>Multi Column Layout</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nisi saepe cumque atque laboriosam necessitatibus tenetur voluptate consectetur fuga.</p>
+    <p>Suscipit natus accusamus illum repellendus reiciendis dolor, ut eveniet sint odio. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sequi quas nemo minima. In alias porro tempora accusamus harum.</p>
+    <p>Molestiae aliquid molestias deleniti perferendis reiciendis modi dolorem unde atque dolorum? Ducimus, saepe. Cum dolorum corporis necessitatibus.</p>
+    <p>At explicabo debitis laboriosam, perspiciatis iure amet temporibus. Ipsum, laboriosam minus officia expedita ut voluptate voluptatem quos nulla.</p>
+  </div>
+
+</body>
+</html>
