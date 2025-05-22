@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shape-Outside All Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .example {
+      margin-bottom: 60px;
+      overflow: auto;
+    }
+
+    .shape-box {
+      float: left;
+      width: 200px;
+      height: 200px;
+      margin: 0 20px 20px 0;
+      background-size: cover;
+      background-position: center;
+      shape-margin: 10px;
+    }
+
+    .text {
+      text-align: justify;
+    }
+
+   
+    .circle {
+      shape-outside: circle();
+      clip-path: circle();
+      background-image: url('https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=');
+    }
+
+    .ellipse {
+      shape-outside: ellipse(50% 40% at 50% 50%);
+      clip-path: ellipse(50% 40% at 50% 50%);
+      background-image: url('https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=');
+    }
+
+   
+
+    .polygon {
+      shape-outside: polygon(50% 0%, 0% 100%, 100% 100%);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      background-image: url('https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=');
+    }
+
+   
+    .inset {
+      shape-outside: inset(10px 20px 10px 20px);
+      clip-path: inset(10px 20px 10px 20px);
+      background-image: url('https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=');
+    }
+
+    
+    .content-box {
+      box-sizing: content-box;
+      padding: 20px;
+      shape-outside: content-box;
+      clip-path: inset(0); 
+      background-image: url('https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=');
+    }
+
+   
+    .border-box {
+      box-sizing: border-box;
+      border: 20px solid transparent;
+      shape-outside: border-box;
+      clip-path: inset(0);
+      background-image: url('https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=');
+    }
+
+    
+    .margin-box {
+      shape-outside: margin-box;
+      clip-path: inset(0);
+      background-image: url('https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=');
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS shape-outside Examples</h1>
+
+
+  <div class="example">
+    <div class="shape-box circle"></div>
+    <div class="text">
+      <strong>Shape: circle()</strong><br>
+      This text wraps around a circular shape defined with `shape-outside: circle()`.
+    </div>
+  </div>
+
+
+  <div class="example">
+    <div class="shape-box ellipse"></div>
+    <div class="text">
+      <strong>Shape: ellipse(50% 40% at 50% 50%)</strong><br>
+      The text flows around an elliptical shape, which is wider than it is tall.
+    </div>
+  </div>
+
+
+  <div class="example">
+    <div class="shape-box polygon"></div>
+    <div class="text">
+      <strong>Shape: polygon(50% 0%, 0% 100%, 100% 100%)</strong><br>
+      This example creates a triangle-like shape with three points.
+    </div>
+  </div>
+
+
+  <div class="example">
+    <div class="shape-box inset"></div>
+    <div class="text">
+      <strong>Shape: inset(10px 20px 10px 20px)</strong><br>
+      Text wraps around a rectangle inset inward from each edge.
+    </div>
+  </div>
+
+ 
+  <div class="example">
+    <div class="shape-box content-box"></div>
+    <div class="text">
+      <strong>Shape: content-box</strong><br>
+      Uses the content area as the shape boundary. Padding does not affect the shape.
+    </div>
+  </div>
+
+    <div class="example">
+    <div class="shape-box border-box"></div>
+    <div class="text">
+      <strong>Shape: border-box</strong><br>
+      Includes border in the shape boundary.
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="shape-box margin-box"></div>
+    <div class="text">
+      <strong>Shape: margin-box</strong><br>
+      Uses the margin edge for text wrapping. Works best with defined margins.
+    </div>
+  </div>
+
+</body>
+</html>
