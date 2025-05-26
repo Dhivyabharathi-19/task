@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables (var) Examples</title>
+    <style>
+      :root {
+        --bgcolor: #2c3e50;
+        --text-color: #ecf0f1;
+        --heading-size: 2em;
+        --box-padding: 20px;
+        --border-radius: 10px;
+        --button-bg: #3498db;
+        --button-text: white;
+        --button-hover-bg: #2980b9;
+      }
+
+      body {
+        background-color: var(--bgcolor);
+        color: var(--text-color);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: var(--box-padding);
+        border-radius: var(--border-radius);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-size: var(--heading-size);
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .example {
+        margin-bottom: 20px;
+        padding: var(--box-padding);
+        border: 1px solid var(--text-color);
+        border-radius: var(--border-radius);
+      }
+
+      button {
+        background-color: var(--button-bg);
+        color: var(--button-text);
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: var(--button-hover-bg);
+      }
+
+      @media screen and (max-width: 768px) {
+        :root {
+          --bgcolor: #f39c12;
+          --text-color: #222;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS <code>var()</code> Examples</h1>
+
+      <div class="example">
+        <strong>1. Using var() for Background and Text Color</strong><br />
+        This box uses `--bgcolor` and `--text-color` from the root.
+      </div>
+
+      <div class="example">
+        <strong>2. Using var() for Padding and Border Radius</strong><br />
+        Padding and corner roundness are controlled via `--box-padding` and
+        `--border-radius`.
+      </div>
+
+      <div class="example">
+        <strong>3. Using var() for Font Size</strong><br />
+        The heading uses `--heading-size` for scalability.
+      </div>
+
+      <div class="example">
+        <strong>4. Responsive Variables with Media Query</strong><br />
+        On smaller screens, `--bgcolor` and `--text-color` change using media
+        queries.
+      </div>
+
+      <div class="example">
+        <strong>5. Dynamic Theme Change with JavaScript</strong><br />
+        <button onclick="changeTheme()">Click to Change Theme</button>
+      </div>
+    </div>
+
+    <script>
+      function changeTheme() {
+        document.documentElement.style.setProperty("--bgcolor", "#16a085");
+        document.documentElement.style.setProperty("--text-color", "#fff");
+        document.documentElement.style.setProperty("--button-bg", "#1abc9c");
+        document.documentElement.style.setProperty(
+          "--button-hover-bg",
+          "#148f77"
+        );
+      }
+    </script>
+  </body>
+</html>
