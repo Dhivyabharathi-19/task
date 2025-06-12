@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align Content Examples</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f8f8f8;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .example {
+        margin-bottom: 40px;
+      }
+
+      .label {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .flex-Container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        background-color: #e3bfc9;
+        border: 2px solid #333;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .flex-Container > div {
+        width: 80px;
+        height: 80px;
+        background-color: #b6bab9;
+        text-align: center;
+        line-height: 80px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .flex-start {
+        align-content: flex-start;
+      }
+      .flex-end {
+        align-content: flex-end;
+      }
+      .center {
+        align-content: center;
+      }
+      .space-between {
+        align-content: space-between;
+      }
+      .space-around {
+        align-content: space-around;
+      }
+      .space-evenly {
+        align-content: space-evenly;
+      }
+      .stretch {
+        align-content: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Flexbox - align-content Examples</h2>
+
+    <div class="example">
+      <div class="label">align-content: flex-start</div>
+      <div class="flex-Container flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="label">align-content: flex-end</div>
+      <div class="flex-Container flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="label">align-content: center</div>
+      <div class="flex-Container center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="label">align-content: space-between</div>
+      <div class="flex-Container space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="label">align-content: space-around</div>
+      <div class="flex-Container space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="label">align-content: space-evenly</div>
+      <div class="flex-Container space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="label">align-content: stretch</div>
+      <div class="flex-Container stretch">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    </div>
+  </body>
+</html>
