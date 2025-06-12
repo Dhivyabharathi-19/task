@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align Items Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        padding: 30px;
+      }
+
+      .flex-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+        background: rgb(231, 200, 200);
+        padding: 20px;
+        height: 200px;
+        border-radius: 10px;
+      }
+
+      .flex-container > div {
+        width: 100px;
+        border: 2px solid #333;
+        background-color: #c5c9d4;
+        color: #24262a;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+
+      .flex1 {
+        order: 4;
+      }
+      .flex2 {
+        order: 3;
+      }
+      .flex3 {
+        order: 2;
+      }
+      .flex4 {
+        order: 1;
+        flex-shrink: 6;
+        background-color: #a8b7c7;
+      }
+
+      .flex-container > div:hover {
+        transform: scale(1.1);
+        background-color: #ddd;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">CSS Flexbox – Align Items with Order</h2>
+
+    <div class="flex-container">
+      <div class="flex1">1</div>
+      <div class="flex2">2</div>
+      <div class="flex3">3</div>
+      <div class="flex4">4</div>
+    </div>
+  </body>
+</html>
