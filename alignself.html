@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align self</title>
+    <style>
+      .container {
+        display: flex;
+        height: 150px;
+        border: 1px solid black;
+        padding: 10px;
+        align-items: stretch;
+        background-color: rgb(199, 199, 204);
+      }
+      .align1 {
+        align-self: center;
+        flex-basis: 100px;
+        background-color: rgb(169, 184, 179);
+      }
+      .align2 {
+        align-self: flex-end;
+        flex-basis: 80px;
+        background-color: rgb(227, 203, 203);
+      }
+      .align3 {
+        align-self: flex-start;
+        flex-basis: 200px;
+        background-color: rgb(227, 203, 203);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="align1">Item 1</div>
+      <div class="align2">Item 2</div>
+      <div class="align3">Item 3</div>
+    </div>
+  </body>
+</html>
