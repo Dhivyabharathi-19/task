@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grid Layout with Named Areas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+        background: #f0f0f0;
+      }
+      section {
+        border: 1px solid #ccc;
+        margin-bottom: 40px;
+        background: white;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+      }
+      .grid-demo {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar content"
+          "footer footer";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 80px 150px 90px;
+        gap: 10px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: plum;
+        padding: 10px;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: palegreen;
+        padding: 10px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+      .content {
+        grid-area: content;
+        background-color: rgb(185, 158, 210);
+        padding: 10px;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: rgb(190, 211, 211);
+        padding: 10px;
+        border-radius: 6px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 600px) {
+        .grid-demo {
+          grid-template-areas:
+            "header"
+            "content"
+            "sidebar"
+            "footer";
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+        }
+        .header,
+        .sidebar,
+        .content,
+        .footer {
+          font-size: 1.2rem;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="grid-demo">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+      </div>
+    </section>
+  </body>
+</html>
